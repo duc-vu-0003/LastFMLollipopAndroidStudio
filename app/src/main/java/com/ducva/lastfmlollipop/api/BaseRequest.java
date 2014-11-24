@@ -25,11 +25,15 @@ public class BaseRequest {
 				.getActiveNetworkInfo().isConnected());
 	}
 
+    //some change
+
 	public static void initNetworkConfig() {
 		client.setTimeout(30000);
 	}
 
 	public static void getLastfm(String function, RequestParams params, AsyncHttpResponseHandler responseHandler) {
+
+        initNetworkConfig();
 
 		String requestUrl = LastfmConstant.BASE_URL + function;
 		
