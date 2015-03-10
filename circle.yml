@@ -21,3 +21,5 @@ deployment:
     commands:
       - ./gradlew assembleDebug
       - curl -F "file=@app/build/outputs/apk/app-debug.apk" -F "token=${DEPLOY_GATE_API_KEY}" -F "message=env_develop" https://deploygate.com/api/users/sirty/apps
+    heroku:
+        appname: lastfmlollipop
