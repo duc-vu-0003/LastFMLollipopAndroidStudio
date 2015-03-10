@@ -15,8 +15,3 @@ dependencies:
 test:
   override:
     - echo "nothing to do"
- deployment:
-      staging:
-        branch: master
-        heroku:
-          appname: LastFMLollipop
