@@ -3,7 +3,7 @@ general:
     only:
       - master
   artifacts:
-    - "lastfmlollipop/build/outputs/apk/lastfmlollipop-debug.apk"
+    - "app/build/outputs/apk/app-debug.apk"
 machine:
   java:
     version: openjdk7
@@ -20,4 +20,4 @@ deployment:
     branch: master
     commands:
       - ./gradlew assembleDebug
-      - curl -F "file=@lastfmlollipop/build/outputs/apk/lastfmlollipop-debug.apk" -F "token=${DEPLOY_GATE_API_KEY}" -F "message=env_develop" https://deploygate.com/api/users/sirty/apps
+      - curl -F "file=@app/build/outputs/apk/app-debug.apk" -F "token=${DEPLOY_GATE_API_KEY}" -F "message=env_develop" https://deploygate.com/api/users/sirty/apps
