@@ -8,7 +8,7 @@ machine:
   java:
     version: openjdk7
   environment:
-    ANDROID_HOME: /home/ubuntu/android
+    ANDROID_HOME: /usr/local/android-sdk-linux
 dependencies:
   cache_directories:
     - ~/.android
