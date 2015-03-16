@@ -8,14 +8,14 @@ machine:
   java:
     version: openjdk7
   environment:
-    ANDROID_HOME: /usr/local/android-sdk-linux
+    ANDROID_HOME: /home/ubuntu/android
 dependencies:
   cache_directories:
     - ~/.android
     - ~/android
   override:
     - bash install-dependencies.sh
-    - ./gradlew clean assemble -PdisablePreDex
+    - ./gradlew -v
 test:
   override:
     - echo "nothing to do"
