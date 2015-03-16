@@ -19,9 +19,6 @@ before_install:
 
 install:
   - ./gradlew assemble
-
-script:
-  - ./gradlew test
 branches:
   only:
     - master
