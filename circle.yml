@@ -15,7 +15,7 @@ dependencies:
     - ~/android
   override:
     - bash install-dependencies.sh
-    - ./gradlew -v
+    - ./gradlew clean assemble -PdisablePreDex
 test:
   override:
     - echo "nothing to do"
