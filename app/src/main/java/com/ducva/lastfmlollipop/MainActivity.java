@@ -1,7 +1,5 @@
 package com.ducva.lastfmlollipop;
 
-import java.util.ArrayList;
-
 import android.annotation.TargetApi;
 import android.content.Intent;
 import android.os.Build;
@@ -36,6 +34,8 @@ import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.download.BaseImageDownloader;
+
+import java.util.ArrayList;
 
 import de.greenrobot.event.EventBus;
 
@@ -80,6 +80,8 @@ public class MainActivity extends ActionBarActivity implements GetMyAlbums.Lastf
         ImageLoader.getInstance().init(config);
 
         listData = new ArrayList<BaseModel>();
+
+        //add some change
 
         initView();
     }
