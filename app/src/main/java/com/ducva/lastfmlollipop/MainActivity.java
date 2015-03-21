@@ -83,6 +83,8 @@ public class MainActivity extends ActionBarActivity implements GetMyAlbums.Lastf
 
         //add some change
 
+        //add some change
+
         initView();
     }
 
